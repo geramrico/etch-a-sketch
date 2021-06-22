@@ -1,0 +1,22 @@
+:root{
+    --grid-rows: rows;
+    --grid-cols: cols;
+}
+
+
+.container{
+    width: 960px;
+    height: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols),1fr);
+    grid-template-rows: repeat(var(--grid-rows),1fr);
+    justify-items: center;
+}
+
+.cell{
+    text-align: center;
+    border: 1px solid black;
+    aspect-ratio: 1;
+    padding: 10px;
+}
